@@ -35,11 +35,8 @@ Motor *motorRotateClaw = new Motor (OUT_C, armConnection);
 Touch *elevatorTouch = new Touch(IN_1,driveConnection);
 
 Drive drive(motorLeftDrive, motorRightDrive);
-<<<<<<< HEAD
+
 ArmLift arm (motorLiftArm,elevatorTouch);
-=======
-ArmLift arm (motorLiftArm);
->>>>>>> master
 Claw claw (motorToggleClaw, motorRotateClaw);
 
 float motor_speed = 0;
@@ -95,19 +92,19 @@ public:
         isUnlocked = false;
     }
 
-	void rollSpeed(float roll){
-		roll_w = static_cast<int>((roll + (float)M_PI/2.0f)/M_PI * 18);
-		if(!armOn&&!controllingDrive){
-			cout<<"int-cast roll reading:"<<roll_w<<endl;
-		}
-	}
-	
-	void rollSpeed(float roll){
-		roll_w = static_cast<int>((roll + (float)M_PI/2.0f)/M_PI * 18);
-		if(!armOn&&!controllingDrive){
-			cout<<"int-cast roll reading:"<<roll_w<<endl;
-		}
-	}
+//	void rollSpeed(float roll){
+//		roll_w = static_cast<int>((roll + (float)M_PI/2.0f)/M_PI * 18);
+//		if(!armOn&&!controllingDrive){
+//			cout<<"int-cast roll reading:"<<roll_w<<endl;
+//		}
+//	}
+//	
+//	void rollSpeed(float roll){
+//		roll_w = static_cast<int>((roll + (float)M_PI/2.0f)/M_PI * 18);
+//		if(!armOn&&!controllingDrive){
+//			cout<<"int-cast roll reading:"<<roll_w<<endl;
+//		}
+//	}
 	
 	void longitudinalSpeed (float pitch){
 		int pitch_w = static_cast<int>((pitch + (float)M_PI/2.0f)/M_PI * 18);
@@ -140,7 +137,7 @@ public:
 		 	yawInit = yaw_w;
 		 	onInit=false;
 		 }
-<<<<<<< HEAD
+
 
 		if (controllingDrive && driveOn){
 	        index = (yaw_w - yawInit) + 4;
@@ -149,7 +146,7 @@ public:
 	        lMotorSpeed+=(100-abs(lMotorSpeed))*(latSpeed[index]);
 	        rMotorSpeed+=(100-abs(rMotorSpeed))*(-latSpeed[index]);
 		} 
-=======
+
 		//int yaw_w = static_cast<int>((yaw + (float)M_PI/2.0f)/M_PI * 18);
 		if (controllingDrive && driveOn){
 	        index = (yaw_w - yawInit) + 4;
@@ -165,7 +162,7 @@ public:
 //			}
 		}
 		//cout << latSpeed[yaw_w] << endl;
->>>>>>> master
+
 	}
 
     void onOrientationData(myo::Myo* myo, uint64_t timestamp, const myo::Quaternion<float>& quat)
@@ -183,7 +180,7 @@ public:
         float yaw = atan2(2.0f * (quat.w() * quat.z() + quat.x() * quat.y()),
                         1.0f - 2.0f * (quat.y() * quat.y() + quat.z() * quat.z()));
                      
-<<<<<<< HEAD
+
 		//Call functions to calculate the motor speed based on the yaw, pitch and roll
 		longitudinalSpeed(pitch);
 		lateralSpeed(yaw);
@@ -192,12 +189,12 @@ public:
 		drive.forward(lMotorSpeed,rMotorSpeed);
 		
 		//cout<<drive.leftDrive->rotation_count;
-=======
+
 		
 		longitudinalSpeed(pitch);
 		lateralSpeed(yaw);
 		drive.forward(lMotorSpeed,rMotorSpeed);
->>>>>>> master
+
         roll_w = static_cast<int>((roll + (float)M_PI)/(M_PI * 2.0f) * 18);
        	pitch_w = static_cast<int>((pitch + (float)M_PI/2.0f)/M_PI * 18);
         yaw_w = static_cast<int>((yaw + (float)M_PI)/(M_PI * 2.0f) * 18); 
@@ -258,22 +255,16 @@ public:
 				   cout<< "cond2 Met"<<endl;   
 				if((!controllingDrive) && (!armOn) ){
 					cout<<"Opening Claw"<<endl;
-<<<<<<< HEAD
 					//claw.open();
-=======
-					claw.open();
->>>>>>> master
+
 				}
 			}
 			else if(pose == myo::Pose::fist){
 				 cout<< "WAVEOUT DETECTED" << controllingDrive << armOn << endl;
 				if(!controllingDrive && !armOn){
 					cout<<"Closing Claw";
-<<<<<<< HEAD
 					//claw.close();
-=======
-					claw.close();
->>>>>>> master
+
 				}
 			}
 			
@@ -355,11 +346,7 @@ int main(int argc, char** argv)
 {
 	ifstream comIn ("comports.txt");
 	cout<<"flag";
-<<<<<<< HEAD
 	int driveCom = 0, armCom = 0, dSensorCom= 0;
-=======
-	int driveCom = 0, armCom = 0;
->>>>>>> master
 	selectPort(comIn, driveCom, armCom);
 	
 	try {
@@ -368,14 +355,11 @@ int main(int argc, char** argv)
     driveConnection->connect(driveCom);
     armConnection->connect(armCom);
     //driveSensorConnection->connect(dSensorCom);
-    cout << "Connected" << endl;
-<<<<<<< HEAD
     arm.zeroEncoder();
     //ArmLift arm (motorLiftArm,elevatorTouch);
     //claw.initialize();
-=======
+
     claw.initialize();
->>>>>>> master
 	
     myo::Hub hub("com.example.hello-myo");
 
@@ -394,10 +378,6 @@ int main(int argc, char** argv)
     hub.addListener(&collector);
     while (1) {
         hub.run(1000/15);
-<<<<<<< HEAD
-        drive.leftDrive->get_output_state();
-=======
->>>>>>> master
         collector.print();
     }
 	//driveConnection->disconnect();
