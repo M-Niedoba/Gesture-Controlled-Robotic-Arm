@@ -11,7 +11,10 @@ void Drive::forward(int lSpeed, int rSpeed){
 		//cout << "hello";
 		leftDrive->on(lSpeed);
 		rightDrive->on(rSpeed);
+<<<<<<< HEAD
 		//cout<<"encoders?"<<leftDrive->get_rotation();
+=======
+>>>>>>> master
 	//}
 }
 

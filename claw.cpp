@@ -5,19 +5,33 @@ Claw::Claw(Motor *motorA, Motor *motorC){
 	rotateClawMotor = motorC;
 	unlocked = true;
 	clawIsOpen = true;
+	rotated = false;
+ 
 }
 
-void Claw::open(int speed){
-	if (!clawIsOpen){
-		clawMotor->on(speed);
+void Claw::initialize(){
+    clawMotor->reset_rotation(false);
+	rotateClawMotor->reset_rotation(false);
+	rotation = clawMotor->get_rotation();
+}
+
+void Claw::open(){
+	if (!clawIsOpen&& !rotated){
+		clawMotor->on(-20);
 		clawIsOpen = true;
+		while(clawMotor->get_rotation()>rotation-90){}
+		clawMotor->off();
 	}	
 }
 
-void Claw::close(int speed){
+void Claw::close(){
 	if (clawIsOpen){
-		clawMotor->off();
+		clawMotor->on(20);
 		clawIsOpen = false;
+		while(clawMotor->get_rotation()<rotation){
+		cout<<"Claw:"<<clawMotor->get_rotation()<<"Goal"<< rotation<<endl;
+		}
+		clawMotor->off();
 	}
 }
 
@@ -26,6 +40,7 @@ bool Claw::isOpen(){
 }
 
 void Claw::rotateClaw(int speed){
+	if(!clawIsOpen&&rotated)
 	rotateClawMotor->on(speed);
 }
 
@@ -39,6 +54,13 @@ void Claw::lockClaw(){
 	rotateClawMotor->off();
 }
 
+
+long Claw::getRotatePosition(){
+	return rotateClawMotor->get_rotation();
+}
+
 bool Claw::isUnlocked(){
 	return unlocked;
 }
+
+

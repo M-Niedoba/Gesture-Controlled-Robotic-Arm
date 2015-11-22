@@ -61,7 +61,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit13]
+<<<<<<< HEAD
 FileName=compass.h
+=======
+FileName=color.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -71,7 +75,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit14]
+<<<<<<< HEAD
 FileName=connection.h
+=======
+FileName=compass.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -81,7 +89,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit24]
+<<<<<<< HEAD
 FileName=light.h
+=======
+FileName=io_8574.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -91,7 +103,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit25]
+<<<<<<< HEAD
 FileName=motor.cpp
+=======
+FileName=io_8574.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -101,7 +117,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit43]
+<<<<<<< HEAD
 FileName=myo.hpp
+=======
+FileName=claw.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=
 Compile=1
@@ -141,9 +161,15 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
+<<<<<<< HEAD
 FileName=adc_8591.h
 CompileCpp=1
 Folder=Bluetooth Library
+=======
+FileName=laptop.h
+CompileCpp=1
+Folder=
+>>>>>>> master
 Compile=1
 Link=1
 Priority=1000
@@ -151,7 +177,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit7]
+<<<<<<< HEAD
 FileName=bluetooth.h
+=======
+FileName=adc_8591.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -161,7 +191,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
+<<<<<<< HEAD
 FileName=brick.cpp
+=======
+FileName=bluetooth.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -171,7 +205,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
+<<<<<<< HEAD
 FileName=brick.h
+=======
+FileName=bluetooth.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -181,7 +219,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit10]
+<<<<<<< HEAD
 FileName=color.cpp
+=======
+FileName=brick.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -191,7 +233,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit11]
+<<<<<<< HEAD
 FileName=color.h
+=======
+FileName=brick.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -201,7 +247,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit12]
+<<<<<<< HEAD
 FileName=compass.cpp
+=======
+FileName=color.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -211,7 +261,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit15]
+<<<<<<< HEAD
 FileName=error.cpp
+=======
+FileName=compass.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -221,7 +275,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit16]
+<<<<<<< HEAD
 FileName=error.h
+=======
+FileName=connection.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -231,7 +289,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit17]
+<<<<<<< HEAD
 FileName=filesystem.cpp
+=======
+FileName=error.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -241,7 +303,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit18]
+<<<<<<< HEAD
 FileName=filesystem.h
+=======
+FileName=error.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -251,7 +317,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit19]
+<<<<<<< HEAD
 FileName=gyro.h
+=======
+FileName=filesystem.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -261,7 +331,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit20]
+<<<<<<< HEAD
 FileName=i2c.cpp
+=======
+FileName=filesystem.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -271,7 +345,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit21]
+<<<<<<< HEAD
 FileName=i2c.h
+=======
+FileName=gyro.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -281,7 +359,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit22]
+<<<<<<< HEAD
 FileName=io_8574.cpp
+=======
+FileName=i2c.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -291,7 +373,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit23]
+<<<<<<< HEAD
 FileName=io_8574.h
+=======
+FileName=i2c.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -301,7 +387,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit26]
+<<<<<<< HEAD
 FileName=motor.h
+=======
+FileName=light.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -311,7 +401,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit27]
+<<<<<<< HEAD
 FileName=nxt.h
+=======
+FileName=motor.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -321,7 +415,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit28]
+<<<<<<< HEAD
 FileName=rcx_light.h
+=======
+FileName=motor.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -331,7 +429,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit29]
+<<<<<<< HEAD
 FileName=rotation.h
+=======
+FileName=nxt.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -341,7 +443,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit30]
+<<<<<<< HEAD
 FileName=sensor.cpp
+=======
+FileName=rcx_light.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -351,7 +457,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit31]
+<<<<<<< HEAD
 FileName=sensor.h
+=======
+FileName=rotation.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -361,7 +471,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit32]
+<<<<<<< HEAD
 FileName=sonar.cpp
+=======
+FileName=sensor.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -371,7 +485,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit33]
+<<<<<<< HEAD
 FileName=sonar.h
+=======
+FileName=sensor.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -381,7 +499,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit34]
+<<<<<<< HEAD
 FileName=sound.h
+=======
+FileName=sonar.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -391,7 +513,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit35]
+<<<<<<< HEAD
 FileName=temperature.h
+=======
+FileName=sonar.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -401,7 +527,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit36]
+<<<<<<< HEAD
 FileName=tilt.cpp
+=======
+FileName=sound.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -411,7 +541,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit37]
+<<<<<<< HEAD
 FileName=tilt.h
+=======
+FileName=temperature.h
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -421,7 +555,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit38]
+<<<<<<< HEAD
 FileName=touch.h
+=======
+FileName=tilt.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=Bluetooth Library
 Compile=1
@@ -431,7 +569,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit39]
+<<<<<<< HEAD
 FileName=armlift.cpp
+=======
+FileName=tilt.h
+>>>>>>> master
 CompileCpp=1
 Folder=
 Compile=1
@@ -441,7 +583,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit40]
+<<<<<<< HEAD
 FileName=armlift.h
+=======
+FileName=touch.h
+>>>>>>> master
 CompileCpp=1
 Folder=
 Compile=1
@@ -451,7 +597,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit41]
+<<<<<<< HEAD
 FileName=claw.cpp
+=======
+FileName=armlift.cpp
+>>>>>>> master
 CompileCpp=1
 Folder=
 Compile=1
@@ -461,7 +611,11 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit42]
+<<<<<<< HEAD
 FileName=claw.h
+=======
+FileName=armlift.h
+>>>>>>> master
 CompileCpp=1
 Folder=
 Compile=1
@@ -481,6 +635,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
+<<<<<<< HEAD
 FileName=bluetooth.cpp
 CompileCpp=1
 Folder=Bluetooth Library
@@ -491,6 +646,8 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
+=======
+>>>>>>> master
 FileName=adc_8591.cpp
 CompileCpp=1
 Folder=Bluetooth Library

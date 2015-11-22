@@ -5,7 +5,9 @@
 
 #include <stdint.h>
 
-#include "C:\Users\Dar Mehta\Desktop\MTE100\myo\libmyo\detail\visibility.h"
+
+#include "C:\Users\Dar Mehta\Documents\GitHub\Gesture-Controlled-Robotic-Arm\myo\libmyo\detail\visibility.h"
+//#include "C:\Users\Matthew\Documents\GitHub\Gesture-Controlled-Robotic-Arm\myo\libmyo\detail\visibility.h"
 
 #ifdef __cplusplus
 extern "C" {
